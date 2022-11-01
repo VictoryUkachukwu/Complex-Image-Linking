@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>File Path Project</title>
+</head>
+<body>
+          <h1 style="text-align: center;"> COMPLEX FILE PATH LINKING</h1><br><hr>
+
+          <h2>The two images ("image01 + image02") located in the general parent folder ("Complex Image Folder")</h2>
+          <img src="../../../../image01.jpg" alt="image01">
+          <img src="../../../../image02.jpg" alt="image02">
+          <h3>We took four steps backwards (../../../../)because the images are four folders away from the webpage</h3><br><hr>
+
+          <h2> The two images ("image03" + "image04") located in the IMG 1 folder. </h2>
+          <img src="../../../../IMG 1/image03.jpg" alt="image03">
+          <img src="../../../../IMG 1/image04.jpg" alt="image04">
+          <h3>Four steps backwards brought us to the general parent folder that contains the two main folders ("IMG 1" + "IMG 2"), one more step backwards will take us out of the project entirely. After getting to the general parent, include the name of a folder to access it (../../../../IMG 1/)</h3><br><hr>
+
+          <h2> The two images ("image05" + "image06") located in the child folder of IMG 1 ("PIX FOLDER")</h2>
+          <img src="../../../../IMG 1/PIX FOLDER/image05.jpg" alt="image05">
+          <img src="../../../../IMG 1/PIX FOLDER/image06.png" alt="image06">
+          <h3>Include the folder name after the forward-slash and add another slash then the image name i.e (../../../../IMG 1/PIX FOLDER/)</h3><br><hr>
+
+          <h2> The two images ("image07" + "image08") located in the first descendant folder of IMG 1 ("PIX FOLDER 2")</h2>
+          <img src="../../../../IMG 1/PIX FOLDER/PIX FOLDER 2/image07.png" alt="image07">
+          <img src="../../../../IMG 1/PIX FOLDER/PIX FOLDER 2/image08.png" alt="image08">
+          <h3>Link up the folder names from parent to child to first descendant and so on to be able to access the images contained in the subsequent folders and always end with a forward-slash then the image name i.e (../../../../IMG 1/PIX FOLDER/PIX FOLDER 2/)</h3><br><hr>
+
+          <h2> The two image ("image09" + "image10") located in the second descendant folder of IMG 1 ("PIX FOLDER 3")</h2>
+          <img src="../../../../IMG 1/PIX FOLDER/PIX FOLDER 2/PIX FOLDER 3/image09.png" alt="image09">
+          <img src="../../../../IMG 1/PIX FOLDER/PIX FOLDER 2/PIX FOLDER 3/image10.png" alt="image10">
+          <h3>These are the last set of images in the IMG 1 folder. (../../../../IMG 1/PIX FOLDER/PIX FOLDER 2/PIX FOLDER 3/)</h3><br><hr>
+
+          <h2> The two images ("image11" + "image12") located in the IMG 2 folder</h2>
+          <img src="../../../../IMG 2/image11.jpg" alt="image11">
+          <img src="../../../../IMG 2/image12.jpg" alt="image12">
+          <h3>We will follow the same procedure for IMG 2 by starting from where we took four steps backward, now we include IMG 2 instead i.e (../../../../IMG 2/)</h3><br><hr>
+
+          <h2> The two images ("image13" + "image14") located in the child folder of IMG 2 ("PICTURE 1 FOLDER")</h2>
+          <img src="../../../PICTURE 1 FOLDER/image13.jpg" alt="image13">
+          <img src="../../../PICTURE 1 FOLDER/image14.jpg" alt="image14">
+          <h3> Since we are linking these images from the folder where our index page is located which is IMG 2 also, we will reduce the backward steps with each folder's name i.e (../../../PICTURE 1 FOLDER)</h3>
+
+          <h2> The two images ("image15" + "image16") located in the first descendant folder of IMG 2 ("PICTURE 2 FOLDER")</h2>
+          <img src="../../PICTURE 2 FOLDER/image15.jpg" alt="image15">
+          <img src="../../PICTURE 2 FOLDER/image16.jpg" alt="image16">
+          <h3> Fewer steps bacwards like we are retracing our steps back to where it all started i.e (../../PICTURE 2 FOLDER/)</h3><br><hr>
+
+          <h2> The two image ("image17" + "image18") located in the second descendant folder of IMG 2 and the parent of the index page("PICTURE 3 FOLDER")</h2>
+          <img src="image17.jpg" alt="image17">
+          <img src="image18.jpg" alt="image18">
+          <h3>Include the names of the images because they are siblings of the index page</h3><br><hr>
+
+          <h2> The last two image ("image19" + "image20") located in the third descendant folder of IMG 2 ("IMAGES FOLDER")</h2>
+          <img src="IMAGES FOLDER/image19.jpg" alt="image19">
+          <img src="IMAGES FOLDER/image20.jpg" alt="image20">
+          <h3>Since we are moving forward instead of backwards to the folder after the index page, we just mention the folder name with a forward-slash then the image name i.e (IMAGES FOLDER/)</h3>
+</body>
+</html>
